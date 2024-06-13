@@ -1,0 +1,19 @@
+﻿@model CategoryEditVM
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="container mt-3">
+    <form class="form-sample" method="post" asp-action="Edit">
+        <div class="form-group">
+            <label>Category</label>
+            <input asp-for="Name" type="text" class="form-control" placeholder="Category name">
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <button type="submit" class="btn btn-success mr-2">Create</button>
+        <a asp-action="Index" asp-controller="Category" class="btn btn-primary">Back</a>
+    </form>
+</div>

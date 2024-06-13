@@ -13,6 +13,10 @@ namespace FruitablesProject.Data
 		public DbSet<Category> Categories { get; set; }
 		public DbSet<Product> Products { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<UnderSliderInformation> UnderSliderInformation { get; set; }
+        public DbSet<FruitsAdvertisment> FruitsAdvertisments { get; set; }
+
+
     }
 }
 

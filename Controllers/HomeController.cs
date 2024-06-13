@@ -21,16 +21,26 @@ public class HomeController : Controller
         List<Slider> sliders = await _context.Sliders.ToListAsync();
         SliderDescriptions sliderDescription = await _context.SliderDescription.FirstOrDefaultAsync();
         List<Category> categories = await _context.Categories.ToListAsync();
-        List<Product> products = await _context.Products.Include(m=>m.ProductImages).ToListAsync();
+        List<Product> products = await _context.Products.Include(m=>m.ProductImages).Take(8).ToListAsync();
+        List<UnderSliderInformation> underSliderInformation = await _context.UnderSliderInformation.ToListAsync();
+        List<FruitsAdvertisment> fruitsAdvertisments = await _context.FruitsAdvertisments.ToListAsync();
 
         HomeVm model = new()
         {
             Sliders = sliders,
             SliderDescription = sliderDescription,
             Categories = categories,
-            Products = products
+            Products = products,
+            UnderSliderInformation = underSliderInformation,
+            FruitsAdvertisment = fruitsAdvertisments
         };
         return View(model);
+    }
+
+    public async Task<IActionResult> ShowMore()
+    {
+        List<Product> products = await _context.Products.Include(m => m.ProductImages).ToListAsync();
+        return Ok(products);
     }
 }
 
