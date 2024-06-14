@@ -80,6 +80,7 @@ namespace FruitablesProject.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
+
             if (id is null) return BadRequest();
             Category category = await _categoryService.GetByIdAsync((int)id);
             if (category is null) return NotFound();
@@ -94,6 +95,7 @@ namespace FruitablesProject.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, CategoryEditVM category)
         {
+            if (!ModelState.IsValid) return View();
             if (id is null) return BadRequest();
 
             Category existCategory = await _categoryService.GetByIdAsync((int)id);

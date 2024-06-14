@@ -1,42 +1,29 @@
 ﻿<Properties StartupConfiguration="{AA506E99-C79C-407A-88F3-07DF69E0EAFD}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Admin/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FruitablesProject PreferredExecutionTarget="/Users/safiyevelnur/Desktop/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Admin/Views/Slider/Create.cshtml">
     <Files>
       <File FileName="appsettings.json" />
       <File FileName="Views/Shared/_Layout.cshtml" />
-      <File FileName="Views/Home/Index.cshtml" />
-      <File FileName="Models/Product.cs" />
-      <File FileName="wwwroot/js/main.js" />
-      <File FileName="Views/_Layout.cshtml" />
-      <File FileName="Areas/Admin/Views/Dashboard/Index.cshtml" Line="1" Column="55" />
-      <File FileName="Areas/Admin/Views/Shared/_Layout.cshtml" Line="33" Column="150" />
-      <File FileName="Areas/Admin/Controllers/SliderController.cs" />
-      <File FileName="Areas/Admin/Controllers/CategoryController.cs" Line="67" Column="1" />
-      <File FileName="Areas/Admin/Views/Category/Index.cshtml" Line="20" Column="115" />
-      <File FileName="Services/CategoryService.cs" Line="34" Column="1" />
-      <File FileName="Services/Interfaces/ICategoryService.cs" Line="10" Column="32" />
-      <File FileName="ViewModels/Categories/CategoryCreateVM.cs" Line="10" Column="42" />
-      <File FileName="Areas/Admin/Controllers/DashboardController.cs" Line="12" Column="4" />
-      <File FileName="ViewModels/Categories/CategoryDetailVM.cs" Line="11" Column="1" />
-      <File FileName="Areas/Admin/Views/Category/Create.cshtml" Line="4" Column="1" />
-      <File FileName="Areas/Admin/Views/Category/Edit.cshtml" Line="20" Column="1" />
-      <File FileName="Areas/Admin/Views/Category/Detail.cshtml" Line="1" Column="1" />
+      <File FileName="Models/Product.cs" Line="4" Column="15" />
+      <File FileName="Areas/Admin/Controllers/SliderController.cs" Line="28" Column="97" />
+      <File FileName="ViewModels/Sliders/SlidersCreateVM.cs" Line="10" Column="1" />
+      <File FileName="Areas/Admin/Views/Slider/Index.cshtml" Line="20" Column="55" />
+      <File FileName="Areas/Admin/Views/Slider/Create.cshtml" Line="18" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FruitablesProject">
             <Node name="FruitablesProject">
-              <Node name="Areas" expanded="True">
+              <Node name="Areas">
                 <Node name="Admin">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Views" expanded="True">
+                  <Node name="Views">
                     <Node name="Category" expanded="True" />
-                    <Node name="Dashboard" expanded="True" />
-                    <Node name="Shared" expanded="True">
-                      <Node name="_Layout.cshtml" selected="True" />
+                    <Node name="Shared" expanded="True" />
+                    <Node name="Slider" expanded="True">
+                      <Node name="Create.cshtml" selected="True" />
                     </Node>
                   </Node>
                 </Node>
@@ -48,8 +35,15 @@
               <Node name="Services" expanded="True">
                 <Node name="Interfaces" expanded="True" />
               </Node>
-              <Node name="ViewModels">
+              <Node name="ViewModels" expanded="True">
                 <Node name="Categories" expanded="True" />
+                <Node name="Sliders" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -57,8 +51,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.FruitablesProject PreferredExecutionTarget="/Users/safiyevelnur/Desktop/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

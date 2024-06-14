@@ -33,6 +33,8 @@
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\Admin\Views\Category\" />
     <Folder Include="ViewModels\Categories\" />
+    <Folder Include="Areas\Admin\Views\Slider\" />
+    <Folder Include="ViewModels\Sliders\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -50,6 +52,8 @@
     <None Remove="Areas\Admin\Views\Shared\" />
     <None Remove="Areas\Admin\Views\Category\" />
     <None Remove="ViewModels\Categories\" />
+    <None Remove="Areas\Admin\Views\Slider\" />
+    <None Remove="ViewModels\Sliders\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
