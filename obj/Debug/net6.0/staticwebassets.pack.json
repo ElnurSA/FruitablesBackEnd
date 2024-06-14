@@ -7445,6 +7445,26 @@
       "PackagePath": "staticwebassets/css/style.css"
     },
     {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/0ae6158a-1a79-497a-a892-b5249e3cf7ef-apple.svg",
+      "PackagePath": "staticwebassets/img/0ae6158a-1a79-497a-a892-b5249e3cf7ef-apple.svg"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/4284d21e-ffff-48ec-b838-047f8f6692df-baner-1.png",
+      "PackagePath": "staticwebassets/img/4284d21e-ffff-48ec-b838-047f8f6692df-baner-1.png"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/478dbb81-ed2e-42ed-a91f-100fe2b916ac-blog-1.jpg",
+      "PackagePath": "staticwebassets/img/478dbb81-ed2e-42ed-a91f-100fe2b916ac-blog-1.jpg"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/4b19a113-71d7-495d-bb35-0c981da9ca82-baner-1.png",
+      "PackagePath": "staticwebassets/img/4b19a113-71d7-495d-bb35-0c981da9ca82-baner-1.png"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/6a20790a-c8c9-4ada-9909-9b92732f431e-blog-1.jpg",
+      "PackagePath": "staticwebassets/img/6a20790a-c8c9-4ada-9909-9b92732f431e-blog-1.jpg"
+    },
+    {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/avatar.jpg",
       "PackagePath": "staticwebassets/img/avatar.jpg"
     },
@@ -7485,6 +7505,14 @@
       "PackagePath": "staticwebassets/img/cart-page-header-img.jpg"
     },
     {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/d17bc95e-23d3-4cee-82a3-6b1903f33ebe-apple.svg",
+      "PackagePath": "staticwebassets/img/d17bc95e-23d3-4cee-82a3-6b1903f33ebe-apple.svg"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/d6657423-5ea7-4465-a0b3-4025f7be5e3e-hero-img-2.jpg",
+      "PackagePath": "staticwebassets/img/d6657423-5ea7-4465-a0b3-4025f7be5e3e-hero-img-2.jpg"
+    },
+    {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/featur-1.jpg",
       "PackagePath": "staticwebassets/img/featur-1.jpg"
     },
@@ -7519,10 +7547,6 @@
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/fruite-item-6.jpg",
       "PackagePath": "staticwebassets/img/fruite-item-6.jpg"
-    },
-    {
-      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/hero-img-1.png",
-      "PackagePath": "staticwebassets/img/hero-img-1.png"
     },
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/hero-img-2.jpg",

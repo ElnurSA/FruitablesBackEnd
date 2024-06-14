@@ -22,6 +22,7 @@
                 <thead>
                     <tr>
                         <th>Image</th>
+                        <th>Name</th>
                         <th>Operations</th>
 
                     </tr>
@@ -32,7 +33,10 @@
                     {
                         <tr>
                             <td>
-                                <img src="~/img/@item.Name" width="100px" height="100px"/>
+                                <img src="~/img/@item.Image" width="100px" height="100px"/>
+                            </td>
+                            <td>
+                                @item.Name
                             </td>
                             <td style="align-content: center;">
                                 <a class="btn btn-info text-white" asp-action="Detail" asp-route-id="@item.Id">Info</a>

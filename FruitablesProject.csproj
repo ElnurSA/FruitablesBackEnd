@@ -35,6 +35,8 @@
     <Folder Include="ViewModels\Categories\" />
     <Folder Include="Areas\Admin\Views\Slider\" />
     <Folder Include="ViewModels\Sliders\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -54,6 +56,8 @@
     <None Remove="ViewModels\Categories\" />
     <None Remove="Areas\Admin\Views\Slider\" />
     <None Remove="ViewModels\Sliders\" />
+    <None Remove="Helpers\" />
+    <None Remove="Helpers\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
