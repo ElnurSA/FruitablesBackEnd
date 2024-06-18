@@ -15,6 +15,9 @@ namespace FruitablesProject.Data
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<UnderSliderInformation> UnderSliderInformation { get; set; }
         public DbSet<FruitsAdvertisment> FruitsAdvertisments { get; set; }
+		public DbSet<Setting> Settings { get; set; }
+		
+
 
 
     }

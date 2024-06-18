@@ -7513,6 +7513,10 @@
       "PackagePath": "staticwebassets/img/d6657423-5ea7-4465-a0b3-4025f7be5e3e-hero-img-2.jpg"
     },
     {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/fd7e2a3f-13a2-4771-b873-6e7775e9603b-hero-img-1.png",
+      "PackagePath": "staticwebassets/img/fd7e2a3f-13a2-4771-b873-6e7775e9603b-hero-img-1.png"
+    },
+    {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/featur-1.jpg",
       "PackagePath": "staticwebassets/img/featur-1.jpg"
     },
@@ -7591,6 +7595,10 @@
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/vegetable-item-6.jpg",
       "PackagePath": "staticwebassets/img/vegetable-item-6.jpg"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/js/basket.js",
+      "PackagePath": "staticwebassets/js/basket.js"
     },
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/js/main.js",

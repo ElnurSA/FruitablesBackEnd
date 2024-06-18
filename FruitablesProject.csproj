@@ -37,6 +37,14 @@
     <Folder Include="ViewModels\Sliders\" />
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\Extensions\" />
+    <Folder Include="ViewModels\Basket\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\Slider\" />
+    <Folder Include="Views\Shared\Components\Header\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="ViewModels\Products\" />
+    <Folder Include="Views\Cart\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -58,6 +66,14 @@
     <None Remove="ViewModels\Sliders\" />
     <None Remove="Helpers\" />
     <None Remove="Helpers\Extensions\" />
+    <None Remove="ViewModels\Basket\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\Slider\" />
+    <None Remove="Views\Shared\Components\Header\" />
+    <None Remove="Views\Product\" />
+    <None Remove="ViewModels\Products\" />
+    <None Remove="Views\Cart\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
@@ -70,5 +86,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>

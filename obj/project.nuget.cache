@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9ZhMVlmru7vVKBDyWHWM2tZvM4rs/9sE06f3e3XJ7cWcPhToWk+riWvdlW7GnjHOZctGBzOahITyWWruouTBZg==",
+  "dgSpecHash": "wKIEMvH+Ibd+UBPFs/4UPlnYlWowXTHEdimnw4GTwRL1YcFvRCRQFFPCxadY9UNmGRvBQtnuZYXTR1NVoF3Wkg==",
   "success": true,
   "projectFilePath": "/Users/safiyevelnur/Desktop/FruitablesProject/FruitablesProject.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "/Users/safiyevelnur/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/Users/safiyevelnur/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/safiyevelnur/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "/Users/safiyevelnur/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/safiyevelnur/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/safiyevelnur/.nuget/packages/system.configuration.configurationmanager/4.7.0/system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "/Users/safiyevelnur/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
