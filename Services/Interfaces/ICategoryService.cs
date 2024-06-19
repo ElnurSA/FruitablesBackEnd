@@ -1,6 +1,7 @@
 ﻿using System;
 using FruitablesProject.Models;
 using FruitablesProject.ViewModels.Categories;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace FruitablesProject.Services.Interfaces
 {
@@ -14,7 +15,7 @@ namespace FruitablesProject.Services.Interfaces
         Task DeleteCategory(Category category);
         Task<Category> GetByIdAsync(int id);
         Task EditAsync(Category category, CategoryEditVM categoryEdit);
-
+        Task<SelectList> GetAllBySelectedAsync();
     }
 }
 

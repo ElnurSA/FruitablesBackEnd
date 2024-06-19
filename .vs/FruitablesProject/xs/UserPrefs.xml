@@ -1,20 +1,23 @@
 ﻿<Properties StartupConfiguration="{AA506E99-C79C-407A-88F3-07DF69E0EAFD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Admin/Controllers/ProductController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/js/basket.js">
     <Files>
-      <File FileName="Views/Home/Index.cshtml" />
-      <File FileName="Controllers/HomeController.cs" />
-      <File FileName="Models/BaseEntity.cs" />
-      <File FileName="ViewComponents/HeaderViewComponent.cs" />
       <File FileName="ViewModels/HeaderVM.cs" />
-      <File FileName="wwwroot/js/basket.js" />
-      <File FileName="Program.cs" Line="48" Column="56" />
-      <File FileName="Controllers/CartController.cs" Line="34" Column="121" />
-      <File FileName="Views/Cart/Index.cshtml" Line="57" Column="37" />
-      <File FileName="ViewModels/Basket/CartVM.cs" Line="7" Column="3" />
-      <File FileName="Models/Product.cs" Line="1" Column="1" />
-      <File FileName="Areas/Admin/Controllers/ProductController.cs" Line="10" Column="29" />
-      <File FileName="Services/Interfaces/IProductSerivce.cs" Line="10" Column="37" />
-      <File FileName="Services/ProductService.cs" Line="18" Column="22" />
+      <File FileName="Areas/Admin/Controllers/ProductController.cs" Line="39" Column="1" />
+      <File FileName="Areas/Admin/Views/Product/Detail.cshtml" Line="17" Column="118" />
+      <File FileName="Areas/Admin/Views/Shared/_Layout.cshtml" />
+      <File FileName="Areas/Admin/Views/Product/Create.cshtml" Line="17" Column="60" />
+      <File FileName="Areas/Admin/Views/Product/Index.cshtml" Line="46" Column="83" />
+      <File FileName="ViewModels/Products/ProductDetailVM.cs" Line="1" Column="1" />
+      <File FileName="Services/ProductService.cs" Line="18" Column="1" />
+      <File FileName="Services/Interfaces/IProductSerivce.cs" Line="16" Column="37" />
+      <File FileName="ViewModels/Products/ProductAdminVM.cs" />
+      <File FileName="Controllers/ProductController.cs" Line="26" Column="1" />
+      <File FileName="ViewModels/Products/ProductCreateVM.cs" />
+      <File FileName="ViewModels/Products/ProductVM.cs" />
+      <File FileName="Program.cs" Line="15" Column="1" />
+      <File FileName="Data/AppDbContext.cs" Line="9" Column="1" />
+      <File FileName="Services/CategoryService.cs" Line="15" Column="1" />
+      <File FileName="wwwroot/js/basket.js" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,14 +26,29 @@
             <Node name="FruitablesProject">
               <Node name="Areas" expanded="True">
                 <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="ProductController.cs" selected="True" />
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Product" expanded="True" />
+                    <Node name="Slider" expanded="True" />
                   </Node>
                 </Node>
               </Node>
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="Extensions" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="Products" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True">
+                  <Node name="basket.js" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -41,7 +59,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.FruitablesProject PreferredExecutionTarget="/Users/safiyevelnur/Desktop/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.FruitablesProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

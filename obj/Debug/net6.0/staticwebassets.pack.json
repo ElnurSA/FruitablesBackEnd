@@ -7445,6 +7445,14 @@
       "PackagePath": "staticwebassets/css/style.css"
     },
     {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/036ccf40-5815-492f-8fd3-55456c5c4f3f-baner-1.png",
+      "PackagePath": "staticwebassets/img/036ccf40-5815-492f-8fd3-55456c5c4f3f-baner-1.png"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/074fa12d-0043-41d6-8fc7-95c35a860104-best-product-6.jpg",
+      "PackagePath": "staticwebassets/img/074fa12d-0043-41d6-8fc7-95c35a860104-best-product-6.jpg"
+    },
+    {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/0ae6158a-1a79-497a-a892-b5249e3cf7ef-apple.svg",
       "PackagePath": "staticwebassets/img/0ae6158a-1a79-497a-a892-b5249e3cf7ef-apple.svg"
     },
@@ -7461,8 +7469,16 @@
       "PackagePath": "staticwebassets/img/4b19a113-71d7-495d-bb35-0c981da9ca82-baner-1.png"
     },
     {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/59d2cb90-7f8c-46c3-ab7e-4559349fd131-baner-1.png",
+      "PackagePath": "staticwebassets/img/59d2cb90-7f8c-46c3-ab7e-4559349fd131-baner-1.png"
+    },
+    {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/6a20790a-c8c9-4ada-9909-9b92732f431e-blog-1.jpg",
       "PackagePath": "staticwebassets/img/6a20790a-c8c9-4ada-9909-9b92732f431e-blog-1.jpg"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/8e7c14a4-d37f-4e1f-b7dd-9e478f5f5d8e-best-product-1.jpg",
+      "PackagePath": "staticwebassets/img/8e7c14a4-d37f-4e1f-b7dd-9e478f5f5d8e-best-product-1.jpg"
     },
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/avatar.jpg",
@@ -7475,6 +7491,10 @@
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/banner-fruits.jpg",
       "PackagePath": "staticwebassets/img/banner-fruits.jpg"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/bcc8bdc9-331f-40c3-94c9-81e23df6313d-banner-fruits.jpg",
+      "PackagePath": "staticwebassets/img/bcc8bdc9-331f-40c3-94c9-81e23df6313d-banner-fruits.jpg"
     },
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/best-product-1.jpg",
@@ -7501,6 +7521,10 @@
       "PackagePath": "staticwebassets/img/best-product-6.jpg"
     },
     {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/c41c1196-54bb-4491-b6ae-5acaa04b6134-banner-fruits.jpg",
+      "PackagePath": "staticwebassets/img/c41c1196-54bb-4491-b6ae-5acaa04b6134-banner-fruits.jpg"
+    },
+    {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/cart-page-header-img.jpg",
       "PackagePath": "staticwebassets/img/cart-page-header-img.jpg"
     },
@@ -7511,6 +7535,18 @@
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/d6657423-5ea7-4465-a0b3-4025f7be5e3e-hero-img-2.jpg",
       "PackagePath": "staticwebassets/img/d6657423-5ea7-4465-a0b3-4025f7be5e3e-hero-img-2.jpg"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/f04596b4-14e5-42eb-826f-6aea93468fe8-baner-1.png",
+      "PackagePath": "staticwebassets/img/f04596b4-14e5-42eb-826f-6aea93468fe8-baner-1.png"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/f45e412e-820e-4465-adbe-8f4de200f66d-avatar.jpg",
+      "PackagePath": "staticwebassets/img/f45e412e-820e-4465-adbe-8f4de200f66d-avatar.jpg"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/fcd97c7e-8ef7-45c5-a064-3620c25bea4b-banner-fruits.jpg",
+      "PackagePath": "staticwebassets/img/fcd97c7e-8ef7-45c5-a064-3620c25bea4b-banner-fruits.jpg"
     },
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/fd7e2a3f-13a2-4771-b873-6e7775e9603b-hero-img-1.png",
@@ -7527,6 +7563,10 @@
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/featur-3.jpg",
       "PackagePath": "staticwebassets/img/featur-3.jpg"
+    },
+    {
+      "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/fec238db-0072-4afb-b000-b4f6327a80f7-best-product-1.jpg",
+      "PackagePath": "staticwebassets/img/fec238db-0072-4afb-b000-b4f6327a80f7-best-product-1.jpg"
     },
     {
       "Id": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/fruite-item-1.jpg",

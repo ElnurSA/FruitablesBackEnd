@@ -4,6 +4,7 @@ using FruitablesProject.Models;
 using FruitablesProject.Services.Interfaces;
 using FruitablesProject.ViewModels.Categories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace FruitablesProject.Services
@@ -59,6 +60,12 @@ namespace FruitablesProject.Services
 			category.Name = categoryEdit.Name;
 			await _context.SaveChangesAsync();
 		}
-	}
+
+        public async Task<SelectList> GetAllBySelectedAsync()
+        {
+			var categories = await _context.Categories.ToListAsync();
+			return new SelectList(categories, "Id", "Name");
+        }
+    }
 }
 

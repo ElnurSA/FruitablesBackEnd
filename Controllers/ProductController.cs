@@ -19,6 +19,8 @@ namespace FruitablesProject.Controllers
 			_productSerivce = productSerivce;
 		}
 
+
+		[HttpGet]
 		public async Task<IActionResult> Index(int? id)
 		{
 
@@ -47,6 +49,8 @@ namespace FruitablesProject.Controllers
 
             return View(product);
         }
+
+		
 	}
 }
 
