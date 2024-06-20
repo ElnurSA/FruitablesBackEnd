@@ -46,6 +46,7 @@
     <Folder Include="ViewModels\Products\" />
     <Folder Include="Views\Cart\" />
     <Folder Include="Areas\Admin\Views\Product\" />
+    <Folder Include="Helpers\Requests\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -76,6 +77,7 @@
     <None Remove="ViewModels\Products\" />
     <None Remove="Views\Cart\" />
     <None Remove="Areas\Admin\Views\Product\" />
+    <None Remove="Helpers\Requests\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />

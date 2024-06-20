@@ -26,6 +26,11 @@ namespace FruitablesProject.Helpers.Extensions
 			if (File.Exists(path))
 				File.Delete(path);
 		}
+
+		public static string GenerateFilePath(this IWebHostEnvironment env, string folder, string fileName)
+		{
+			return Path.Combine(env.WebRootPath, folder, fileName);
+		}
 	}
 }
 

@@ -7,6 +7,11 @@
     z-index: 99999;
  }
 
+.category-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
 .paginate-active{
     background-color: #4e73df !important ;
     color: white !important;
@@ -161,6 +166,7 @@
         opacity: 0;
     }
 }
+
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-secondary);

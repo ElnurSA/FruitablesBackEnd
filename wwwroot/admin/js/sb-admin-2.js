@@ -24,6 +24,23 @@
     };
   });
 
+    $(document).on("click", ".delete-image-btn", function () {
+        let imageId = parseInt($(this).attr("data-image-id"));
+        let productId = parseInt($(this).attr("data-product-id"));
+
+
+        console.log(imageId + "-" + productId)
+        //let data = { imageId, productId };
+        //$.ajax({
+        //    url: "/admin/product/DeleteProductImage",
+        //    type: "POST",
+        //    data: request,
+        //    success: function (response) {
+        //        $(`[data-image-id = ${imageId}]`).parent().remove();
+        //    },
+        //});
+    })
+
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function(e) {
     if ($(window).width() > 768) {
@@ -54,3 +71,6 @@
   });
 
 })(jQuery); // End of use strict
+
+
+

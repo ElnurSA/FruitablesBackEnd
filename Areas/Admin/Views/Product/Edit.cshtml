@@ -1,0 +1,84 @@
+﻿@model ProductEditVM
+
+
+
+<div class="container mt-3">
+    <div class="product-images row mt-3" style="gap:10px">
+        @foreach (var item in Model.ExistImages)
+        {
+            <div class="product-item delete-image" style="position: relative">
+                <img src="~/img/@item.Image" class="@(item.IsMain ? "product-main-image" : "")" style="width:150px; height:150px" />
+                @if (!item.IsMain)
+                {
+                    <button class="btn btn-danger btn-sm delete-image-btn" data-image-id="@item.Id" data-product-id="@item.ProductId" style="position:absolute; top:60px; left:42px; opacity: 0">Delete</button>
+                }
+            </div>
+
+        }
+    </div>
+    <form class="form-sample" method="post" asp-action="Edit" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Name</label>
+            <input asp-for="Name" class="form-control" placeholder="Name">
+            <span class="text-danger" asp-validation-for="Name"></span>
+
+            <label>Description</label>
+            <input asp-for="Description" class="form-control mt-4" placeholder="Description">
+            <span class="text-danger" asp-validation-for="Description"></span>
+
+            <label>Price</label>
+            <input asp-for="Price" type="number" step="any" min="0" class="form-control mt-4" placeholder="Price">
+            <span class="text-danger" asp-validation-for="Price"></span>
+
+            <label class="mt-4">Category</label>
+            <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-control">
+            </select>
+
+            <label class="mt-4">Images</label>
+            <input asp-for="NewImages" class="form-control">
+            <span class="text-danger" asp-validation-for="NewImages"></span>
+
+
+
+
+        </div>
+        <button type="submit" class="btn btn-success mr-2">Create</button>
+        <a asp-action="Index" asp-controller="Product" class="btn btn-primary">Back</a>
+    </form>
+</div>
+
+
+
+<style>
+    .product-main-image {
+        border: solid 3px yellowgreen;
+    }
+
+    .delete-image:hover button {
+        opacity: 1 !important;
+        transition: all 0.5s !important;
+        z-index: 1 !important;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>$(document).ready(function () {
+        $(document).on("click", ".delete-image-btn", function () {
+            let imageId = parseInt($(this).attr("data-image-id"));
+            let productId = parseInt($(this).attr("data-product-id"));
+
+            let request = { imageId, productId };
+
+
+            $.ajax({
+                url: "/admin/product/DeleteProductImage",
+                type: "POST",
+                data: request,
+                success: function (response) {
+                    $(`[data-image-id = ${imageId}]`).parent().remove();
+                },
+            });
+        });
+});
+</script>
+

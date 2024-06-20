@@ -1,5 +1,7 @@
 ﻿using System;
 using FruitablesProject.Data;
+using FruitablesProject.Helpers.Extensions;
+using FruitablesProject.Helpers.Requests;
 using FruitablesProject.Models;
 using FruitablesProject.Services.Interfaces;
 using FruitablesProject.ViewModels.Products;
@@ -10,11 +12,13 @@ namespace FruitablesProject.Services
     public class ProductService : IProductSerivce
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _env;
         
         
-        public ProductService(AppDbContext context)
+        public ProductService(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
         public async Task<List<Product>> GetAllAsync()
@@ -67,6 +71,43 @@ namespace FruitablesProject.Services
         {
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteProductImageAsync(DeleteProductImageRequest request)
+        {
+            var product = await _context.Products.Where(m => m.Id == request.ProductId).Include(m => m.ProductImages).FirstOrDefaultAsync();
+
+            var image = product.ProductImages.FirstOrDefault(m => m.Id == request.ImageId);
+
+            string path = _env.GenerateFilePath("img", image.Name);
+
+            path.DeleteFileFromLocal();
+
+            product.ProductImages.Remove(image);
+
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task EditAsync(Product product, ProductEditVM edittedProduct)
+        {
+            if(edittedProduct.NewImages != null)
+            {
+                foreach (var item in edittedProduct.NewImages)
+                {
+                    string fileName = Guid.NewGuid().ToString() + "-" + item.FileName;
+                    string path = _env.GenerateFilePath("img", fileName);
+                    await item.SaveFileToLocalAsync(path);
+                    product.ProductImages.Add(new ProductImage { Name = fileName });
+                }
+            }
+
+            product.Name = edittedProduct.Name;
+            product.Description = edittedProduct.Description;
+            product.CategoryId = edittedProduct.CategoryId;
+            product.Price = edittedProduct.Price;
+
+            await _context.SaveChangesAsync();
+            
         }
     }
 }

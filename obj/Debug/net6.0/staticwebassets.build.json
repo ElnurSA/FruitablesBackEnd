@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hljCE5LCY+QFcKOjSzNS1VMzwTQfZydnS17fshJfphk=",
+  "Hash": "f2WTTlAv+6lzf7AB6hsg/lYbhbQc8W1oRMknx8/kF+c=",
   "Source": "FruitablesProject",
   "BasePath": "_content/FruitablesProject",
   "Mode": "Default",
@@ -31671,40 +31671,6 @@
       "OriginalItemSpec": "wwwroot/css/style.css"
     },
     {
-      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/036ccf40-5815-492f-8fd3-55456c5c4f3f-baner-1.png",
-      "SourceId": "FruitablesProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
-      "BasePath": "_content/FruitablesProject",
-      "RelativePath": "img/036ccf40-5815-492f-8fd3-55456c5c4f3f-baner-1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/036ccf40-5815-492f-8fd3-55456c5c4f3f-baner-1.png"
-    },
-    {
-      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/074fa12d-0043-41d6-8fc7-95c35a860104-best-product-6.jpg",
-      "SourceId": "FruitablesProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
-      "BasePath": "_content/FruitablesProject",
-      "RelativePath": "img/074fa12d-0043-41d6-8fc7-95c35a860104-best-product-6.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/074fa12d-0043-41d6-8fc7-95c35a860104-best-product-6.jpg"
-    },
-    {
       "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/0ae6158a-1a79-497a-a892-b5249e3cf7ef-apple.svg",
       "SourceId": "FruitablesProject",
       "SourceType": "Discovered",
@@ -31720,6 +31686,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/0ae6158a-1a79-497a-a892-b5249e3cf7ef-apple.svg"
+    },
+    {
+      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/41ddb528-639c-4aa8-937f-7ba9d9892226-best-product-1.jpg",
+      "SourceId": "FruitablesProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
+      "BasePath": "_content/FruitablesProject",
+      "RelativePath": "img/41ddb528-639c-4aa8-937f-7ba9d9892226-best-product-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/41ddb528-639c-4aa8-937f-7ba9d9892226-best-product-1.jpg"
     },
     {
       "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/4284d21e-ffff-48ec-b838-047f8f6692df-baner-1.png",
@@ -31807,12 +31790,12 @@
       "OriginalItemSpec": "wwwroot/img/6a20790a-c8c9-4ada-9909-9b92732f431e-blog-1.jpg"
     },
     {
-      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/8e7c14a4-d37f-4e1f-b7dd-9e478f5f5d8e-best-product-1.jpg",
+      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/7fea2d13-962b-41d0-9b1e-01b78b574d41-best-product-2.jpg",
       "SourceId": "FruitablesProject",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
       "BasePath": "_content/FruitablesProject",
-      "RelativePath": "img/8e7c14a4-d37f-4e1f-b7dd-9e478f5f5d8e-best-product-1.jpg",
+      "RelativePath": "img/7fea2d13-962b-41d0-9b1e-01b78b574d41-best-product-2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31821,7 +31804,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/8e7c14a4-d37f-4e1f-b7dd-9e478f5f5d8e-best-product-1.jpg"
+      "OriginalItemSpec": "wwwroot/img/7fea2d13-962b-41d0-9b1e-01b78b574d41-best-product-2.jpg"
     },
     {
       "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/avatar.jpg",
@@ -31873,23 +31856,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/banner-fruits.jpg"
-    },
-    {
-      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/bcc8bdc9-331f-40c3-94c9-81e23df6313d-banner-fruits.jpg",
-      "SourceId": "FruitablesProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
-      "BasePath": "_content/FruitablesProject",
-      "RelativePath": "img/bcc8bdc9-331f-40c3-94c9-81e23df6313d-banner-fruits.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/bcc8bdc9-331f-40c3-94c9-81e23df6313d-banner-fruits.jpg"
     },
     {
       "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/best-product-1.jpg",
@@ -31994,23 +31960,6 @@
       "OriginalItemSpec": "wwwroot/img/best-product-6.jpg"
     },
     {
-      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/c41c1196-54bb-4491-b6ae-5acaa04b6134-banner-fruits.jpg",
-      "SourceId": "FruitablesProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
-      "BasePath": "_content/FruitablesProject",
-      "RelativePath": "img/c41c1196-54bb-4491-b6ae-5acaa04b6134-banner-fruits.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/c41c1196-54bb-4491-b6ae-5acaa04b6134-banner-fruits.jpg"
-    },
-    {
       "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/cart-page-header-img.jpg",
       "SourceId": "FruitablesProject",
       "SourceType": "Discovered",
@@ -32060,57 +32009,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/d6657423-5ea7-4465-a0b3-4025f7be5e3e-hero-img-2.jpg"
-    },
-    {
-      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/f04596b4-14e5-42eb-826f-6aea93468fe8-baner-1.png",
-      "SourceId": "FruitablesProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
-      "BasePath": "_content/FruitablesProject",
-      "RelativePath": "img/f04596b4-14e5-42eb-826f-6aea93468fe8-baner-1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/f04596b4-14e5-42eb-826f-6aea93468fe8-baner-1.png"
-    },
-    {
-      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/f45e412e-820e-4465-adbe-8f4de200f66d-avatar.jpg",
-      "SourceId": "FruitablesProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
-      "BasePath": "_content/FruitablesProject",
-      "RelativePath": "img/f45e412e-820e-4465-adbe-8f4de200f66d-avatar.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/f45e412e-820e-4465-adbe-8f4de200f66d-avatar.jpg"
-    },
-    {
-      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/fcd97c7e-8ef7-45c5-a064-3620c25bea4b-banner-fruits.jpg",
-      "SourceId": "FruitablesProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
-      "BasePath": "_content/FruitablesProject",
-      "RelativePath": "img/fcd97c7e-8ef7-45c5-a064-3620c25bea4b-banner-fruits.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/fcd97c7e-8ef7-45c5-a064-3620c25bea4b-banner-fruits.jpg"
     },
     {
       "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/img/fd7e2a3f-13a2-4771-b873-6e7775e9603b-hero-img-1.png",

@@ -1,4 +1,5 @@
 ﻿using System;
+using FruitablesProject.Helpers.Requests;
 using FruitablesProject.Models;
 using FruitablesProject.ViewModels.Products;
 
@@ -14,6 +15,9 @@ namespace FruitablesProject.Services.Interfaces
 		Task<int> GetCountAsync();
 		Task CreateAsync(Product product);
 		Task DeleteProduct(Product product);
+		Task DeleteProductImageAsync(DeleteProductImageRequest request);
+		Task EditAsync(Product product, ProductEditVM edittedProduct);
+
 
 	}
 }
