@@ -1,9 +1,14 @@
 ﻿using System;
 using FruitablesProject.Helpers.Enums;
 using FruitablesProject.Models;
+using FruitablesProject.Services.Interfaces;
 using FruitablesProject.ViewModels.Account;
+using MailKit.Net.Smtp;
+using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit;
+using MimeKit.Text;
 
 namespace FruitablesProject.Controllers
 {
@@ -12,12 +17,14 @@ namespace FruitablesProject.Controllers
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
 		private readonly RoleManager<IdentityRole> _roleManager;
+		private readonly IEmailService _emailService;
 
-		public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
+		public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, IEmailService emailService)
 		{
 			_userManager = userManager;
 			_signInManager = signInManager;
 			_roleManager = roleManager;
+			_emailService = emailService;
 		}
 
 		//SignUp
@@ -62,12 +69,45 @@ namespace FruitablesProject.Controllers
                 return View(request);
             }
 
-			await _signInManager.SignInAsync(user, false);
+			string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
 
-			await _userManager.AddToRoleAsync(user, nameof(Roles.Member));
+			
+            string url = Url.Action(nameof(ConfirmEmail), "Account", new { userId = user.Id, token }, Request.Scheme, Request.Host.ToString());
 
 
-			return RedirectToAction("Index", "Home");
+            string html = await System.IO.File.ReadAllTextAsync("wwwroot/templates/register.html");
+
+
+            html = html.Replace("{link}", url);
+
+            html = html.Replace("{UserFullName}", user.FullName);
+
+            string subject = "Confirm you email";
+
+			_emailService.Send(user.Email, subject, html);
+
+
+            await _userManager.AddToRoleAsync(user, nameof(Roles.Member));
+
+
+
+			return RedirectToAction(nameof(VerifyEmail));
+		}
+
+		[HttpGet]
+		public IActionResult VerifyEmail()
+		{
+			return View();
+		}
+
+
+		[HttpGet]
+		public async Task<IActionResult> ConfirmEmail(string userId, string token)
+		{
+			var user = await _userManager.FindByIdAsync(userId);
+			await _userManager.ConfirmEmailAsync(user, token);
+			bool IsTrue = await _userManager.IsEmailConfirmedAsync(user);
+			return RedirectToAction(nameof(SignIn));
 		}
 
 		//SignIn

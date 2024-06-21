@@ -9,6 +9,7 @@
   <ItemGroup>
     <Content Remove="wwwroot\" />
     <Content Remove="wwwroot\admin\" />
+    <Content Remove="wwwroot\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
@@ -52,6 +53,7 @@
     <Folder Include="Helpers\Enums\" />
     <Folder Include="Areas\Admin\Views\User\" />
     <Folder Include="ViewModels\Users\" />
+    <Folder Include="wwwroot\templates\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -102,5 +104,6 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="MailKit" Version="4.6.0" />
   </ItemGroup>
 </Project>

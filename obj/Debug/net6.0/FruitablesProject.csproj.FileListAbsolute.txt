@@ -65,3 +65,9 @@
 /Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/safiyevelnur/Desktop/FruitablesProject/obj/Debug/net6.0/FruitablesProject.csproj.CopyComplete
+/Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/BouncyCastle.Cryptography.dll
+/Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/MailKit.dll
+/Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/MimeKit.dll
+/Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/System.Formats.Asn1.dll
+/Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll

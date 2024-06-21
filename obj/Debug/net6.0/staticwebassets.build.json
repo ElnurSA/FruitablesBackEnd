@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "foTZBcw/q4dZBoAUvW36rHNRVbZqmC16vXpij7Ic2GA=",
+  "Hash": "mL7cshL/1IBpQWqVUHH9ruxws/OZnsU8CEBcPQXonJ4=",
   "Source": "FruitablesProject",
   "BasePath": "_content/FruitablesProject",
   "Mode": "Default",
@@ -34134,6 +34134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/scss/bootstrap/scss/vendor/_rfs.scss"
+    },
+    {
+      "Identity": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/templates/register.html",
+      "SourceId": "FruitablesProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/safiyevelnur/Desktop/FruitablesProject/wwwroot/",
+      "BasePath": "_content/FruitablesProject",
+      "RelativePath": "templates/register.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/templates/register.html"
     }
   ]
 }
