@@ -47,6 +47,8 @@
     <Folder Include="Views\Cart\" />
     <Folder Include="Areas\Admin\Views\Product\" />
     <Folder Include="Helpers\Requests\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="ViewModels\Account\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -78,6 +80,8 @@
     <None Remove="Views\Cart\" />
     <None Remove="Areas\Admin\Views\Product\" />
     <None Remove="Helpers\Requests\" />
+    <None Remove="Views\Account\" />
+    <None Remove="ViewModels\Account\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
@@ -91,5 +95,6 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
   </ItemGroup>
 </Project>

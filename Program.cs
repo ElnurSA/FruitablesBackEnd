@@ -1,4 +1,5 @@
 ﻿using FruitablesProject.Data;
+using FruitablesProject.Models;
 using FruitablesProject.Services;
 using FruitablesProject.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
@@ -11,6 +12,16 @@ builder.Services.AddControllersWithViews();
 
 //builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
+builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+builder.Services.Configure<IdentityOptions>(opt =>
+{
+    opt.Password.RequireDigit = true;
+    opt.Password.RequireLowercase = true;
+    opt.Password.RequireUppercase = true;
+
+    opt.User.RequireUniqueEmail = true;
+});
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 

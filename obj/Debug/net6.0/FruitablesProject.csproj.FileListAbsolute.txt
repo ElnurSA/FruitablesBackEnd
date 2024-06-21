@@ -63,4 +63,5 @@
 /Users/safiyevelnur/Desktop/FruitablesProject/obj/Debug/net6.0/FruitablesProject.genruntimeconfig.cache
 /Users/safiyevelnur/Desktop/FruitablesProject/obj/Debug/net6.0/ref/FruitablesProject.dll
 /Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/safiyevelnur/Desktop/FruitablesProject/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/safiyevelnur/Desktop/FruitablesProject/obj/Debug/net6.0/FruitablesProject.csproj.CopyComplete
