@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rGV1gBUxqqU=",
+  "dgSpecHash": "jas3OwN3/PH+col7ps1sAHNBSRuCBtONUlY0LiUWpZ9jWS4+mxpi3BLKNxtSSo709hLkZoajdmjTnvuuvxFgIw==",
   "success": true,
   "projectFilePath": "/Users/safiyevelnur/Desktop/FruitablesProject/FruitablesProject.csproj",
   "expectedPackageFiles": [
@@ -52,10 +52,7 @@
     "/Users/safiyevelnur/.nuget/packages/system.security.permissions/4.7.0/system.security.permissions.4.7.0.nupkg.sha512",
     "/Users/safiyevelnur/.nuget/packages/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg.sha512",
     "/Users/safiyevelnur/.nuget/packages/system.text.encoding.codepages/4.7.0/system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "/Users/safiyevelnur/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
-    "/Users/safiyevelnur/.nuget/packages/microsoft.netcore.app.ref/6.0.30/microsoft.netcore.app.ref.6.0.30.nupkg.sha512",
-    "/Users/safiyevelnur/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.30/microsoft.aspnetcore.app.ref.6.0.30.nupkg.sha512",
-    "/Users/safiyevelnur/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.30/microsoft.netcore.app.host.osx-arm64.6.0.30.nupkg.sha512"
+    "/Users/safiyevelnur/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

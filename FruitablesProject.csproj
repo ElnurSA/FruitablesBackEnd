@@ -49,6 +49,9 @@
     <Folder Include="Helpers\Requests\" />
     <Folder Include="Views\Account\" />
     <Folder Include="ViewModels\Account\" />
+    <Folder Include="Helpers\Enums\" />
+    <Folder Include="Areas\Admin\Views\User\" />
+    <Folder Include="ViewModels\Users\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -82,6 +85,9 @@
     <None Remove="Helpers\Requests\" />
     <None Remove="Views\Account\" />
     <None Remove="ViewModels\Account\" />
+    <None Remove="Helpers\Enums\" />
+    <None Remove="Areas\Admin\Views\User\" />
+    <None Remove="ViewModels\Users\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />

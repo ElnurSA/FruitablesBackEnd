@@ -1,0 +1,54 @@
+﻿@model List<UserRolesVM>
+
+<div class="card shadow mb-4" style="width:100%">
+
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            @if (User.Identity.IsAuthenticated)
+            {
+                if (User.IsInRole("SuperAdmin"))
+                {
+                    <div class="create-category mb-3">
+                        <a asp-area="Admin" asp-controller="Slider" asp-action="Create"><button class="btn btn-success mb-3 ">Add Role To User</button></a>
+                    </div>
+                }
+            }
+
+
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>FullName</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Roles</th>
+                    <th>Operations</th>
+
+                </tr>
+            </thead>
+            @foreach (var user in Model)
+             { 
+                <tbody>
+
+                    
+                   <td>@user.FullName</td>
+                   <td>@user.Email</td>
+                   <td>@user.Username</td>
+                   <td>@user.Roles</td>
+                @*<td>
+                <a class="btn btn-info text-white" asp-action="Detail" asp-route-id="@item.Id">Info</a>
+                <a class="btn btn-warning text-white ml-3" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                <form class="fomrs-sample d-inline" method="post" asp-action="Delete" asp-route-id="@item.Id">
+                    <button type="submit" class="btn btn-danger text-white ml-3">Delete</button>
+                </form>
+            </td>*@
+                </tbody>
+            }
+
+        </table>
+        </div>
+    </div>
+</div>

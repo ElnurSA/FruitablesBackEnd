@@ -1,16 +1,10 @@
 ﻿<Properties StartupConfiguration="{AA506E99-C79C-407A-88F3-07DF69E0EAFD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/Components/Header/Default.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Admin/Controllers/UserController.cs">
     <Files>
-      <File FileName="Controllers/AccountController.cs" Line="70" Column="28" />
-      <File FileName="Views/Account/SignUp.cshtml" Line="59" Column="41" />
-      <File FileName="ViewModels/Account/RegisterVM.cs" Line="17" Column="1" />
-      <File FileName="Program.cs" Line="26" Column="1" />
-      <File FileName="Data/AppDbContext.cs" Line="10" Column="1" />
-      <File FileName="wwwroot/js/basket.js" Line="1" Column="1" />
-      <File FileName="Views/Shared/Components/Header/Default.cshtml" Line="57" Column="30" />
-      <File FileName="Views/Account/SignIn.cshtml" Line="2" Column="1" />
-      <File FileName="ViewModels/Account/LoginVM.cs" Line="11" Column="30" />
-      <File FileName="ViewComponents/HeaderViewComponent.cs" Line="36" Column="24" />
+      <File FileName="Areas/Admin/Views/User/Index.cshtml" Line="15" Column="143" />
+      <File FileName="Areas/Admin/Controllers/UserController.cs" Line="36" Column="30" />
+      <File FileName="Areas/Admin/Views/Shared/_Layout.cshtml" Line="93" Column="105" />
+      <File FileName="Areas/Admin/Controllers/SliderController.cs" Line="19" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,19 +12,19 @@
           <Node name="FruitablesProject">
             <Node name="FruitablesProject">
               <Node name="Areas">
-                <Node name="Admin" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="ViewComponents" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Account" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="Components" expanded="True">
-                    <Node name="Header" expanded="True">
-                      <Node name="Default.cshtml" selected="True" />
-                    </Node>
+                <Node name="Admin">
+                  <Node name="Controllers">
+                    <Node name="UserController.cs" selected="True" />
+                  </Node>
+                  <Node name="Views">
+                    <Node name="Category" expanded="True" />
+                    <Node name="Shared" expanded="True" />
+                    <Node name="User" expanded="True" />
                   </Node>
                 </Node>
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="Users" expanded="True" />
               </Node>
             </Node>
           </Node>

@@ -1,4 +1,5 @@
 ﻿using System;
+using FruitablesProject.Helpers.Enums;
 using FruitablesProject.Models;
 using FruitablesProject.ViewModels.Account;
 using Microsoft.AspNetCore.Identity;
@@ -10,11 +11,13 @@ namespace FruitablesProject.Controllers
 	{
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
+		private readonly RoleManager<IdentityRole> _roleManager;
 
-		public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+		public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
 		{
 			_userManager = userManager;
 			_signInManager = signInManager;
+			_roleManager = roleManager;
 		}
 
 		//SignUp
@@ -60,6 +63,8 @@ namespace FruitablesProject.Controllers
             }
 
 			await _signInManager.SignInAsync(user, false);
+
+			await _userManager.AddToRoleAsync(user, nameof(Roles.Member));
 
 
 			return RedirectToAction("Index", "Home");
@@ -113,6 +118,19 @@ namespace FruitablesProject.Controllers
 			await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
+		[HttpGet]
+		public async Task<IActionResult> CreateRoles()
+		{
+			foreach (var role in Enum.GetValues(typeof(Roles)))
+			{
+				if(!await _roleManager.RoleExistsAsync(nameof(role)))
+				{
+					await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
+				}
+			}
+			return Ok();
+		}
 	}
 }
 

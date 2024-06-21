@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FruitablesProject.Data;
+using FruitablesProject.Helpers.Enums;
 using FruitablesProject.Helpers.Extensions;
 using FruitablesProject.Models;
 using FruitablesProject.ViewModels.Categories;
 using FruitablesProject.ViewModels.Sliders;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,7 +26,7 @@ namespace FruitablesProject.Areas.Admin.Controllers
             _env = env;
             _context = context;
         }
-
+        [Authorize(Roles = "SuperAdmin, Admin")]
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -34,8 +36,10 @@ namespace FruitablesProject.Areas.Admin.Controllers
             return View(result);
         }
 
-        
-        //Create 
+
+
+        //Create
+        [Authorize(Roles = "SuperAdmin")]
         [HttpGet]
         public IActionResult Create()
         {

@@ -1,16 +1,19 @@
 ﻿using System;
 using FruitablesProject.Helpers;
+using FruitablesProject.Helpers.Enums;
 using FruitablesProject.Helpers.Extensions;
 using FruitablesProject.Helpers.Requests;
 using FruitablesProject.Models;
 using FruitablesProject.Services.Interfaces;
 using FruitablesProject.ViewModels.Products;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FruitablesProject.Areas.Admin.Controllers
 {
-	[Area("Admin")]
-	public class ProductController : Controller
+    [Area("Admin")]
+    
+    public class ProductController : Controller
 	{
 		private readonly IProductSerivce _productSerivce;
 		private readonly ICategoryService _categoryService;
@@ -24,7 +27,8 @@ namespace FruitablesProject.Areas.Admin.Controllers
 
         }
 
-		[HttpGet]
+        [Authorize(Roles = "SuperAdmin, Admin")]
+        [HttpGet]
 		public async Task<IActionResult> Index(int page = 1 )
 		{
 			var paginateData = await _productSerivce.GetAllPaginateAsync(page);
@@ -81,8 +85,9 @@ namespace FruitablesProject.Areas.Admin.Controllers
 			return View(model);
         }
 
-		//Create
-		[HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
+        //Create
+        [HttpGet]
 		public async Task<IActionResult> Create()
 		{
 			ViewBag.Categories = await _categoryService.GetAllBySelectedAsync();

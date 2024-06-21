@@ -7,55 +7,56 @@
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            @*@if (User.Identity.IsAuthenticated)
+            <div class="table-responsive">
+                @if (User.Identity.IsAuthenticated)
                 {
                     if (User.IsInRole("SuperAdmin"))
                     {
                         <div class="create-category mb-3">
-                            <a asp-action="Create" class="btn btn-success text-white">Create</a>
+                            <a asp-area="Admin" asp-controller="Product" asp-action="Create"><button class="btn btn-success mb-3 ">Create</button></a>
                         </div>
                     }
-                }*@
+                }
 
-            <a asp-area="Admin" asp-controller="Product" asp-action="Create"><button class="btn btn-success mb-3 ">Create</button></a>
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                        <th>Category</th>
-                        <th>Operations</th>
 
-                    </tr>
-                </thead>
-
-                <tbody>
-                    @foreach (var item in Model.Datas)
-                    {
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
                         <tr>
-                            <td><img src="~/img/@item.ProductImages" style="width:100px; height:100px" /></td>
-                            <td>@item.Name</td>
-                            <td>@item.Description</td>
-                            <td>@item.Price</td>
-                            <td>@item.Category</td>
-                            <td style="width:300px">
-                                <a class="btn btn-info text-white" asp-action="Detail" asp-route-id="@item.Id">Info</a>
-                                <a class="btn btn-warning text-white ml-3" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                                <form class="fomrs-sample d-inline" method="post"  asp-action="Delete" asp-route-id="@item.Id">
-                                    <button type="submit" class="btn btn-danger text-white ml-3">Delete</button>
-                                </form>
-                            </td>
-
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Operations</th>
 
                         </tr>
-                    }
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model.Datas)
+                        {
+                            <tr>
+                                <td><img src="~/img/@item.ProductImages" style="width:100px; height:100px" /></td>
+                                <td>@item.Name</td>
+                                <td>@item.Description</td>
+                                <td>@item.Price</td>
+                                <td>@item.Category</td>
+                                <td style="width:300px">
+                                    <a class="btn btn-info text-white" asp-action="Detail" asp-route-id="@item.Id">Info</a>
+                                    <a class="btn btn-warning text-white ml-3" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                    <form class="fomrs-sample d-inline" method="post" asp-action="Delete" asp-route-id="@item.Id">
+                                        <button type="submit" class="btn btn-danger text-white ml-3">Delete</button>
+                                    </form>
+                                </td>
 
 
-                </tbody>
-            </table>
-        </div>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
     </div>
 
     <div class="paginate-area d-flex justify-content-center mt-3">

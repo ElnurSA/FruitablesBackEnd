@@ -24,6 +24,8 @@ namespace FruitablesProject.Areas.Admin.Controllers
             _context = context;
             _categoryService = categoryService;
         }
+
+        [Authorize(Roles = "SuperAdmin, Admin")]
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -31,12 +33,14 @@ namespace FruitablesProject.Areas.Admin.Controllers
             return View(await _categoryService.GetAllOrderByDesc());
         }
 
+        [Authorize(Roles = "SuperAdmin")]
         [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
 
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CategoryCreateVM category)
