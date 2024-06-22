@@ -5,6 +5,7 @@ namespace FruitablesProject.ViewModels.Products
 {
 	public class ProductVM
 	{
+        public int Id { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
@@ -15,6 +16,7 @@ namespace FruitablesProject.ViewModels.Products
         public ICollection<ProductImage> ProductImages { get; set; }
         public List<Category> AllCategories { get; set; }
         public int ProductCount { get; set; }
+        public List<Product> Products { get; set; }
     }
 }
 

@@ -1,6 +1,8 @@
 ﻿using System;
 using FruitablesProject.Data;
+using FruitablesProject.Models;
 using FruitablesProject.ViewModels.Basket;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -11,16 +13,20 @@ namespace FruitablesProject.Controllers
 	{
 		private readonly AppDbContext _context;
         private readonly IHttpContextAccessor _accessor;
-		public CartController(AppDbContext context, IHttpContextAccessor accessor)
+        private readonly UserManager<AppUser> _userManager;
+
+        public CartController(AppDbContext context, IHttpContextAccessor accessor, UserManager<AppUser> userManager)
 		{
 			_context = context;
             _accessor = accessor;
+            _userManager = userManager;
 
         }
 
         [HttpGet]
 		public async Task<IActionResult> Index()
 		{
+            
             List<BasketVM>? basketProducts = null;
 
             if (_accessor.HttpContext.Request.Cookies["basket"] is not null)

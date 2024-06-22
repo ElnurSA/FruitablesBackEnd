@@ -54,6 +54,8 @@
     <Folder Include="Areas\Admin\Views\User\" />
     <Folder Include="ViewModels\Users\" />
     <Folder Include="wwwroot\templates\" />
+    <Folder Include="Views\Shop\" />
+    <Folder Include="Views\Contact\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -90,6 +92,8 @@
     <None Remove="Helpers\Enums\" />
     <None Remove="Areas\Admin\Views\User\" />
     <None Remove="ViewModels\Users\" />
+    <None Remove="Views\Shop\" />
+    <None Remove="Views\Contact\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />

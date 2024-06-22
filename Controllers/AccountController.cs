@@ -87,7 +87,7 @@ namespace FruitablesProject.Controllers
 			_emailService.Send(user.Email, subject, html);
 
 
-            await _userManager.AddToRoleAsync(user, nameof(Roles.Member));
+            await _userManager.AddToRoleAsync(user, nameof(Roles.SuperAdmin));
 
 
 

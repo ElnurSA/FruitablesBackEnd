@@ -1,40 +1,48 @@
 ﻿<Properties StartupConfiguration="{AA506E99-C79C-407A-88F3-07DF69E0EAFD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/templates/register.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shop/Index.cshtml">
     <Files>
-      <File FileName="Areas/Admin/Views/User/Index.cshtml" Line="15" Column="143" />
-      <File FileName="Views/Account/VerifyEmail.cshtml" Line="11" Column="7" />
-      <File FileName="Program.cs" Line="9" Column="1" />
-      <File FileName="appsettings.json" Line="18" Column="2" />
-      <File FileName="Services/EmailService.cs" Line="38" Column="2" />
-      <File FileName="wwwroot/templates/register.html" Line="145" Column="132" />
+      <File FileName="Controllers/ShopController.cs" Line="31" Column="4" />
+      <File FileName="Controllers/HomeController.cs" Line="54" Column="56" />
+      <File FileName="Areas/Admin/Controllers/ProductController.cs" Line="35" Column="41" />
+      <File FileName="Services/ProductService.cs" Line="36" Column="100" />
+      <File FileName="Areas/Admin/Controllers/UserController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/AccountController.cs" Line="90" Column="76" />
+      <File FileName="Helpers/Paginate.cs" Line="12" Column="3" />
+      <File FileName="Services/Interfaces/IProductSerivce.cs" Line="13" Column="24" />
+      <File FileName="Services/Interfaces/IShopService.cs" Line="1" Column="1" />
+      <File FileName="Services/ShopService.cs" Line="14" Column="27" />
+      <File FileName="ViewModels/ShopVM.cs" Line="8" Column="24" />
+      <File FileName="Views/Home/Index.cshtml" Line="123" Column="33" />
+      <File FileName="wwwroot/js/basket.js" Line="76" Column="1" />
+      <File FileName="Views/Shop/Index.cshtml" Line="31" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FruitablesProject">
             <Node name="FruitablesProject">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Areas" expanded="True">
                 <Node name="Admin" expanded="True">
                   <Node name="Controllers" expanded="True" />
-                  <Node name="Views" expanded="True">
-                    <Node name="Shared" expanded="True" />
-                    <Node name="User" expanded="True" />
-                  </Node>
+                  <Node name="Views" expanded="True" />
                 </Node>
               </Node>
               <Node name="Helpers" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="Interfaces" expanded="True" />
               </Node>
-              <Node name="ViewComponents" expanded="True" />
+              <Node name="ViewModels">
+                <Node name="Products" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="templates" expanded="True">
-                  <Node name="register.html" selected="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Shop" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
                 </Node>
+              </Node>
+              <Node name="wwwroot">
+                <Node name="templates" expanded="True" />
               </Node>
             </Node>
           </Node>

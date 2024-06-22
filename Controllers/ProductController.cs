@@ -29,10 +29,12 @@ namespace FruitablesProject.Controllers
 
 			List<Category> allCategories = await _context.Categories.ToListAsync();
 
+			List<Product> products = await _context.Products.Include(m=>m.ProductImages).ToListAsync();
 
 			Product existproduct = await _productSerivce.GetByIdAsync(id);
 			ProductVM? product = new()
 			{
+				Id = existproduct.Id,
 				ProductImages = existproduct.ProductImages,
 				Price = existproduct.Price,
 				Name = existproduct.Name,
@@ -41,7 +43,7 @@ namespace FruitablesProject.Controllers
 				RatingStars = existproduct.RatingStars,
 				Count = existproduct.Count,
 				AllCategories = allCategories,
-				
+				Products = products
 
             };
 

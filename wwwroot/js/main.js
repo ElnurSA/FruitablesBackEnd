@@ -131,6 +131,7 @@
     });
 
 
+    
 
     // Product Quantity
     $('.quantity button').on('click', function () {
@@ -149,4 +150,5 @@
     });
 
 })(jQuery);
+
 

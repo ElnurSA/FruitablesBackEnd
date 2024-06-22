@@ -35,6 +35,8 @@ public class HomeController : Controller
         List<FruitsAdvertisment> fruitsAdvertisments = await _context.FruitsAdvertisments.ToListAsync();
 
 
+        ViewBag.Products = products;
+
         HomeVm model = new()
         {
             Sliders = sliders,
@@ -84,7 +86,7 @@ public class HomeController : Controller
             });
         }
 
-
+        
 
 
         _accessor.HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(basketProducts));

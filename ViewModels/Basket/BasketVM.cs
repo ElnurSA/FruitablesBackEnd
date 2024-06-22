@@ -6,6 +6,8 @@ namespace FruitablesProject.ViewModels.Basket
 		public int Id { get; set; }
 		public int Count { get; set; }
 		public decimal Price { get; set; }
+		public int UserId { get; set; }
+		
 	}	
 }
 
